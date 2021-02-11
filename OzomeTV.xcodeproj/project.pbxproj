@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		575033F825D5C2A300E314C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575033F725D5C2A300E314C6 /* AppDelegate.swift */; };
+		575033FA25D5C2A300E314C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575033F925D5C2A300E314C6 /* SceneDelegate.swift */; };
+		575033FC25D5C2A300E314C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575033FB25D5C2A300E314C6 /* ViewController.swift */; };
+		575033FF25D5C2A300E314C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575033FD25D5C2A300E314C6 /* Main.storyboard */; };
+		5750340125D5C2A400E314C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5750340025D5C2A400E314C6 /* Assets.xcassets */; };
+		5750340425D5C2A400E314C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5750340225D5C2A400E314C6 /* LaunchScreen.storyboard */; };
+		5750340F25D5C2A400E314C6 /* OzomeTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750340E25D5C2A400E314C6 /* OzomeTVTests.swift */; };
+		5750341A25D5C2A400E314C6 /* OzomeTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750341925D5C2A400E314C6 /* OzomeTVUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5750340B25D5C2A400E314C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 575033EC25D5C2A300E314C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 575033F325D5C2A300E314C6;
+			remoteInfo = OzomeTV;
+		};
+		5750341625D5C2A400E314C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 575033EC25D5C2A300E314C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 575033F325D5C2A300E314C6;
+			remoteInfo = OzomeTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		575033F425D5C2A300E314C6 /* OzomeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OzomeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		575033F725D5C2A300E314C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		575033F925D5C2A300E314C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		575033FB25D5C2A300E314C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		575033FE25D5C2A300E314C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5750340025D5C2A400E314C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5750340325D5C2A400E314C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5750340525D5C2A400E314C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5750340A25D5C2A400E314C6 /* OzomeTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OzomeTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5750340E25D5C2A400E314C6 /* OzomeTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzomeTVTests.swift; sourceTree = "<group>"; };
+		5750341025D5C2A400E314C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5750341525D5C2A400E314C6 /* OzomeTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OzomeTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5750341925D5C2A400E314C6 /* OzomeTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzomeTVUITests.swift; sourceTree = "<group>"; };
+		5750341B25D5C2A400E314C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		575033F125D5C2A300E314C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5750340725D5C2A400E314C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5750341225D5C2A400E314C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		575033EB25D5C2A300E314C6 = {
+			isa = PBXGroup;
+			children = (
+				575033F625D5C2A300E314C6 /* OzomeTV */,
+				5750340D25D5C2A400E314C6 /* OzomeTVTests */,
+				5750341825D5C2A400E314C6 /* OzomeTVUITests */,
+				575033F525D5C2A300E314C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		575033F525D5C2A300E314C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				575033F425D5C2A300E314C6 /* OzomeTV.app */,
+				5750340A25D5C2A400E314C6 /* OzomeTVTests.xctest */,
+				5750341525D5C2A400E314C6 /* OzomeTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		575033F625D5C2A300E314C6 /* OzomeTV */ = {
+			isa = PBXGroup;
+			children = (
+				575033F725D5C2A300E314C6 /* AppDelegate.swift */,
+				575033F925D5C2A300E314C6 /* SceneDelegate.swift */,
+				575033FB25D5C2A300E314C6 /* ViewController.swift */,
+				575033FD25D5C2A300E314C6 /* Main.storyboard */,
+				5750340025D5C2A400E314C6 /* Assets.xcassets */,
+				5750340225D5C2A400E314C6 /* LaunchScreen.storyboard */,
+				5750340525D5C2A400E314C6 /* Info.plist */,
+			);
+			path = OzomeTV;
+			sourceTree = "<group>";
+		};
+		5750340D25D5C2A400E314C6 /* OzomeTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				5750340E25D5C2A400E314C6 /* OzomeTVTests.swift */,
+				5750341025D5C2A400E314C6 /* Info.plist */,
+			);
+			path = OzomeTVTests;
+			sourceTree = "<group>";
+		};
+		5750341825D5C2A400E314C6 /* OzomeTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5750341925D5C2A400E314C6 /* OzomeTVUITests.swift */,
+				5750341B25D5C2A400E314C6 /* Info.plist */,
+			);
+			path = OzomeTVUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		575033F325D5C2A300E314C6 /* OzomeTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5750341E25D5C2A400E314C6 /* Build configuration list for PBXNativeTarget "OzomeTV" */;
+			buildPhases = (
+				575033F025D5C2A300E314C6 /* Sources */,
+				575033F125D5C2A300E314C6 /* Frameworks */,
+				575033F225D5C2A300E314C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OzomeTV;
+			productName = OzomeTV;
+			productReference = 575033F425D5C2A300E314C6 /* OzomeTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5750340925D5C2A400E314C6 /* OzomeTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5750342125D5C2A400E314C6 /* Build configuration list for PBXNativeTarget "OzomeTVTests" */;
+			buildPhases = (
+				5750340625D5C2A400E314C6 /* Sources */,
+				5750340725D5C2A400E314C6 /* Frameworks */,
+				5750340825D5C2A400E314C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5750340C25D5C2A400E314C6 /* PBXTargetDependency */,
+			);
+			name = OzomeTVTests;
+			productName = OzomeTVTests;
+			productReference = 5750340A25D5C2A400E314C6 /* OzomeTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5750341425D5C2A400E314C6 /* OzomeTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5750342425D5C2A400E314C6 /* Build configuration list for PBXNativeTarget "OzomeTVUITests" */;
+			buildPhases = (
+				5750341125D5C2A400E314C6 /* Sources */,
+				5750341225D5C2A400E314C6 /* Frameworks */,
+				5750341325D5C2A400E314C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5750341725D5C2A400E314C6 /* PBXTargetDependency */,
+			);
+			name = OzomeTVUITests;
+			productName = OzomeTVUITests;
+			productReference = 5750341525D5C2A400E314C6 /* OzomeTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		575033EC25D5C2A300E314C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					575033F325D5C2A300E314C6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					5750340925D5C2A400E314C6 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 575033F325D5C2A300E314C6;
+					};
+					5750341425D5C2A400E314C6 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 575033F325D5C2A300E314C6;
+					};
+				};
+			};
+			buildConfigurationList = 575033EF25D5C2A300E314C6 /* Build configuration list for PBXProject "OzomeTV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 575033EB25D5C2A300E314C6;
+			productRefGroup = 575033F525D5C2A300E314C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				575033F325D5C2A300E314C6 /* OzomeTV */,
+				5750340925D5C2A400E314C6 /* OzomeTVTests */,
+				5750341425D5C2A400E314C6 /* OzomeTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		575033F225D5C2A300E314C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5750340425D5C2A400E314C6 /* LaunchScreen.storyboard in Resources */,
+				5750340125D5C2A400E314C6 /* Assets.xcassets in Resources */,
+				575033FF25D5C2A300E314C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5750340825D5C2A400E314C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5750341325D5C2A400E314C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		575033F025D5C2A300E314C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575033FC25D5C2A300E314C6 /* ViewController.swift in Sources */,
+				575033F825D5C2A300E314C6 /* AppDelegate.swift in Sources */,
+				575033FA25D5C2A300E314C6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5750340625D5C2A400E314C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5750340F25D5C2A400E314C6 /* OzomeTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5750341125D5C2A400E314C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5750341A25D5C2A400E314C6 /* OzomeTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5750340C25D5C2A400E314C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 575033F325D5C2A300E314C6 /* OzomeTV */;
+			targetProxy = 5750340B25D5C2A400E314C6 /* PBXContainerItemProxy */;
+		};
+		5750341725D5C2A400E314C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 575033F325D5C2A300E314C6 /* OzomeTV */;
+			targetProxy = 5750341625D5C2A400E314C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		575033FD25D5C2A300E314C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				575033FE25D5C2A300E314C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5750340225D5C2A400E314C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5750340325D5C2A400E314C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5750341C25D5C2A400E314C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5750341D25D5C2A400E314C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5750341F25D5C2A400E314C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HDS28KUE5;
+				INFOPLIST_FILE = OzomeTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorrezamobile.OzomeTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5750342025D5C2A400E314C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HDS28KUE5;
+				INFOPLIST_FILE = OzomeTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorrezamobile.OzomeTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5750342225D5C2A400E314C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HDS28KUE5;
+				INFOPLIST_FILE = OzomeTVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorrezamobile.OzomeTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OzomeTV.app/OzomeTV";
+			};
+			name = Debug;
+		};
+		5750342325D5C2A400E314C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HDS28KUE5;
+				INFOPLIST_FILE = OzomeTVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorrezamobile.OzomeTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OzomeTV.app/OzomeTV";
+			};
+			name = Release;
+		};
+		5750342525D5C2A400E314C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HDS28KUE5;
+				INFOPLIST_FILE = OzomeTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorrezamobile.OzomeTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OzomeTV;
+			};
+			name = Debug;
+		};
+		5750342625D5C2A400E314C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HDS28KUE5;
+				INFOPLIST_FILE = OzomeTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorrezamobile.OzomeTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OzomeTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		575033EF25D5C2A300E314C6 /* Build configuration list for PBXProject "OzomeTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5750341C25D5C2A400E314C6 /* Debug */,
+				5750341D25D5C2A400E314C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5750341E25D5C2A400E314C6 /* Build configuration list for PBXNativeTarget "OzomeTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5750341F25D5C2A400E314C6 /* Debug */,
+				5750342025D5C2A400E314C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5750342125D5C2A400E314C6 /* Build configuration list for PBXNativeTarget "OzomeTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5750342225D5C2A400E314C6 /* Debug */,
+				5750342325D5C2A400E314C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5750342425D5C2A400E314C6 /* Build configuration list for PBXNativeTarget "OzomeTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5750342525D5C2A400E314C6 /* Debug */,
+				5750342625D5C2A400E314C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 575033EC25D5C2A300E314C6 /* Project object */;
+}
