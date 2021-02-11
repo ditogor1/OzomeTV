@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,7 @@
 		575033FA25D5C2A300E314C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575033F925D5C2A300E314C6 /* SceneDelegate.swift */; };
 		575033FC25D5C2A300E314C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575033FB25D5C2A300E314C6 /* ViewController.swift */; };
 		575033FF25D5C2A300E314C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575033FD25D5C2A300E314C6 /* Main.storyboard */; };
-		5750340125D5C2A400E314C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5750340025D5C2A400E314C6 /* Assets.xcassets */; };
+		5750340125D5C2A400E314C6 /* OzomeTVAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5750340025D5C2A400E314C6 /* OzomeTVAssets.xcassets */; };
 		5750340425D5C2A400E314C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5750340225D5C2A400E314C6 /* LaunchScreen.storyboard */; };
 		5750340F25D5C2A400E314C6 /* OzomeTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750340E25D5C2A400E314C6 /* OzomeTVTests.swift */; };
 		5750341A25D5C2A400E314C6 /* OzomeTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750341925D5C2A400E314C6 /* OzomeTVUITests.swift */; };
@@ -44,7 +44,7 @@
 		575033F925D5C2A300E314C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		575033FB25D5C2A300E314C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		575033FE25D5C2A300E314C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5750340025D5C2A400E314C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5750340025D5C2A400E314C6 /* OzomeTVAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = OzomeTVAssets.xcassets; sourceTree = "<group>"; };
 		5750340325D5C2A400E314C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5750340525D5C2A400E314C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5750340A25D5C2A400E314C6 /* OzomeTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OzomeTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,11 +114,12 @@
 		575033F625D5C2A300E314C6 /* OzomeTV */ = {
 			isa = PBXGroup;
 			children = (
+				5755242625D5F56900C795DC /* Scenes */,
 				575033F725D5C2A300E314C6 /* AppDelegate.swift */,
 				575033F925D5C2A300E314C6 /* SceneDelegate.swift */,
 				575033FB25D5C2A300E314C6 /* ViewController.swift */,
 				575033FD25D5C2A300E314C6 /* Main.storyboard */,
-				5750340025D5C2A400E314C6 /* Assets.xcassets */,
+				5750340025D5C2A400E314C6 /* OzomeTVAssets.xcassets */,
 				5750340225D5C2A400E314C6 /* LaunchScreen.storyboard */,
 				5750340525D5C2A400E314C6 /* Info.plist */,
 			);
@@ -143,13 +144,19 @@
 			path = OzomeTVUITests;
 			sourceTree = "<group>";
 		};
+		5755242625D5F56900C795DC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		9DAFCA6B8DF52C67055461A1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				0449B675078246DB1A810FC4 /* Pods-OzomeTV.debug.xcconfig */,
 				4B9B14FE2D153A0F55022D08 /* Pods-OzomeTV.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,7 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5750340425D5C2A400E314C6 /* LaunchScreen.storyboard in Resources */,
-				5750340125D5C2A400E314C6 /* Assets.xcassets in Resources */,
+				5750340125D5C2A400E314C6 /* OzomeTVAssets.xcassets in Resources */,
 				575033FF25D5C2A300E314C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
