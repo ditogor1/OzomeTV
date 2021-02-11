@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4295B976CC984CCB6BED692A /* libPods-OzomeTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9EF96B3CCC962437A33898 /* libPods-OzomeTV.a */; };
 		575033F825D5C2A300E314C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575033F725D5C2A300E314C6 /* AppDelegate.swift */; };
 		575033FA25D5C2A300E314C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575033F925D5C2A300E314C6 /* SceneDelegate.swift */; };
 		575033FC25D5C2A300E314C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575033FB25D5C2A300E314C6 /* ViewController.swift */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0449B675078246DB1A810FC4 /* Pods-OzomeTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzomeTV.debug.xcconfig"; path = "Target Support Files/Pods-OzomeTV/Pods-OzomeTV.debug.xcconfig"; sourceTree = "<group>"; };
+		2B9EF96B3CCC962437A33898 /* libPods-OzomeTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OzomeTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9B14FE2D153A0F55022D08 /* Pods-OzomeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzomeTV.release.xcconfig"; path = "Target Support Files/Pods-OzomeTV/Pods-OzomeTV.release.xcconfig"; sourceTree = "<group>"; };
 		575033F425D5C2A300E314C6 /* OzomeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OzomeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		575033F725D5C2A300E314C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		575033F925D5C2A300E314C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4295B976CC984CCB6BED692A /* libPods-OzomeTV.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27AE897B1FB0CBF90C6CBBBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B9EF96B3CCC962437A33898 /* libPods-OzomeTV.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		575033EB25D5C2A300E314C6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,8 @@
 				5750340D25D5C2A400E314C6 /* OzomeTVTests */,
 				5750341825D5C2A400E314C6 /* OzomeTVUITests */,
 				575033F525D5C2A300E314C6 /* Products */,
+				9DAFCA6B8DF52C67055461A1 /* Pods */,
+				27AE897B1FB0CBF90C6CBBBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +143,16 @@
 			path = OzomeTVUITests;
 			sourceTree = "<group>";
 		};
+		9DAFCA6B8DF52C67055461A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0449B675078246DB1A810FC4 /* Pods-OzomeTV.debug.xcconfig */,
+				4B9B14FE2D153A0F55022D08 /* Pods-OzomeTV.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5750341E25D5C2A400E314C6 /* Build configuration list for PBXNativeTarget "OzomeTV" */;
 			buildPhases = (
+				CA71E7BCA8CF59B4FC66DA13 /* [CP] Check Pods Manifest.lock */,
 				575033F025D5C2A300E314C6 /* Sources */,
 				575033F125D5C2A300E314C6 /* Frameworks */,
 				575033F225D5C2A300E314C6 /* Resources */,
+				BE890AA01AB2BFA1466832A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE890AA01AB2BFA1466832A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OzomeTV/Pods-OzomeTV-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OzomeTV/Pods-OzomeTV-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OzomeTV/Pods-OzomeTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA71E7BCA8CF59B4FC66DA13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OzomeTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		575033F025D5C2A300E314C6 /* Sources */ = {
@@ -433,6 +502,7 @@
 		};
 		5750341F25D5C2A400E314C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0449B675078246DB1A810FC4 /* Pods-OzomeTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +522,7 @@
 		};
 		5750342025D5C2A400E314C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9B14FE2D153A0F55022D08 /* Pods-OzomeTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
