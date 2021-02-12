@@ -8,14 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		4295B976CC984CCB6BED692A /* libPods-OzomeTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9EF96B3CCC962437A33898 /* libPods-OzomeTV.a */; };
+		57125E2125D6FB1E0082532D /* Date_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2025D6FB1E0082532D /* Date_Extensions.swift */; };
+		57125E2425D702490082532D /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2325D702490082532D /* Styles.swift */; };
 		575033F825D5C2A300E314C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575033F725D5C2A300E314C6 /* AppDelegate.swift */; };
 		575033FA25D5C2A300E314C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575033F925D5C2A300E314C6 /* SceneDelegate.swift */; };
-		575033FC25D5C2A300E314C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575033FB25D5C2A300E314C6 /* ViewController.swift */; };
 		575033FF25D5C2A300E314C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575033FD25D5C2A300E314C6 /* Main.storyboard */; };
 		5750340125D5C2A400E314C6 /* OzomeTVAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5750340025D5C2A400E314C6 /* OzomeTVAssets.xcassets */; };
 		5750340425D5C2A400E314C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5750340225D5C2A400E314C6 /* LaunchScreen.storyboard */; };
 		5750340F25D5C2A400E314C6 /* OzomeTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750340E25D5C2A400E314C6 /* OzomeTVTests.swift */; };
 		5750341A25D5C2A400E314C6 /* OzomeTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750341925D5C2A400E314C6 /* OzomeTVUITests.swift */; };
+		5755242E25D5FDB900C795DC /* ListOfShowsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755242825D5FDB900C795DC /* ListOfShowsPresenter.swift */; };
+		5755242F25D5FDB900C795DC /* ListOfShowsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755242825D5FDB900C795DC /* ListOfShowsPresenter.swift */; };
+		5755243025D5FDB900C795DC /* ListOfShowsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755242925D5FDB900C795DC /* ListOfShowsWorker.swift */; };
+		5755243125D5FDB900C795DC /* ListOfShowsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755242925D5FDB900C795DC /* ListOfShowsWorker.swift */; };
+		5755243225D5FDB900C795DC /* ListOfShowsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755242A25D5FDB900C795DC /* ListOfShowsRouter.swift */; };
+		5755243325D5FDB900C795DC /* ListOfShowsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755242A25D5FDB900C795DC /* ListOfShowsRouter.swift */; };
+		5755243425D5FDB900C795DC /* ListOfShowsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755242B25D5FDB900C795DC /* ListOfShowsModels.swift */; };
+		5755243525D5FDB900C795DC /* ListOfShowsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755242B25D5FDB900C795DC /* ListOfShowsModels.swift */; };
+		5755243625D5FDB900C795DC /* ListOfShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755242C25D5FDB900C795DC /* ListOfShowsViewController.swift */; };
+		5755243725D5FDB900C795DC /* ListOfShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755242C25D5FDB900C795DC /* ListOfShowsViewController.swift */; };
+		5755243825D5FDB900C795DC /* ListOfShowsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755242D25D5FDB900C795DC /* ListOfShowsInteractor.swift */; };
+		5755243925D5FDB900C795DC /* ListOfShowsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755242D25D5FDB900C795DC /* ListOfShowsInteractor.swift */; };
+		5755243D25D6011400C795DC /* ShowCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755243C25D6011400C795DC /* ShowCellTableViewCell.swift */; };
+		5755243E25D6011400C795DC /* ShowCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755243C25D6011400C795DC /* ShowCellTableViewCell.swift */; };
+		5755244225D6030E00C795DC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755244125D6030E00C795DC /* R.generated.swift */; };
+		5755244325D6030E00C795DC /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755244125D6030E00C795DC /* R.generated.swift */; };
+		5755244625D613F600C795DC /* ShowsGuideAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755244525D613F600C795DC /* ShowsGuideAPI.swift */; };
+		5755244725D613F600C795DC /* ShowsGuideAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755244525D613F600C795DC /* ShowsGuideAPI.swift */; };
+		5755244A25D62B9C00C795DC /* ParseTVAmazeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755244925D62B9C00C795DC /* ParseTVAmazeWorker.swift */; };
+		5755244B25D62B9C00C795DC /* ParseTVAmazeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755244925D62B9C00C795DC /* ParseTVAmazeWorker.swift */; };
+		5755244E25D62CA900C795DC /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755244D25D62CA900C795DC /* Show.swift */; };
+		5755244F25D62CA900C795DC /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755244D25D62CA900C795DC /* Show.swift */; };
+		5755245225D63FAD00C795DC /* String_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755245125D63FAD00C795DC /* String_Extensions.swift */; };
+		5755245325D63FAD00C795DC /* String_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755245125D63FAD00C795DC /* String_Extensions.swift */; };
+		5755245725D646C500C795DC /* OzomeTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755245625D646C500C795DC /* OzomeTVViewController.swift */; };
+		5755245825D646C500C795DC /* OzomeTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755245625D646C500C795DC /* OzomeTVViewController.swift */; };
+		5755245F25D64C7600C795DC /* OTVErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755245E25D64C7600C795DC /* OTVErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +67,11 @@
 		0449B675078246DB1A810FC4 /* Pods-OzomeTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzomeTV.debug.xcconfig"; path = "Target Support Files/Pods-OzomeTV/Pods-OzomeTV.debug.xcconfig"; sourceTree = "<group>"; };
 		2B9EF96B3CCC962437A33898 /* libPods-OzomeTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OzomeTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9B14FE2D153A0F55022D08 /* Pods-OzomeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzomeTV.release.xcconfig"; path = "Target Support Files/Pods-OzomeTV/Pods-OzomeTV.release.xcconfig"; sourceTree = "<group>"; };
+		57125E2025D6FB1E0082532D /* Date_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date_Extensions.swift; sourceTree = "<group>"; };
+		57125E2325D702490082532D /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		575033F425D5C2A300E314C6 /* OzomeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OzomeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		575033F725D5C2A300E314C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		575033F925D5C2A300E314C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		575033FB25D5C2A300E314C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		575033FE25D5C2A300E314C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5750340025D5C2A400E314C6 /* OzomeTVAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = OzomeTVAssets.xcassets; sourceTree = "<group>"; };
 		5750340325D5C2A400E314C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +82,20 @@
 		5750341525D5C2A400E314C6 /* OzomeTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OzomeTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5750341925D5C2A400E314C6 /* OzomeTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzomeTVUITests.swift; sourceTree = "<group>"; };
 		5750341B25D5C2A400E314C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5755242825D5FDB900C795DC /* ListOfShowsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfShowsPresenter.swift; sourceTree = "<group>"; };
+		5755242925D5FDB900C795DC /* ListOfShowsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfShowsWorker.swift; sourceTree = "<group>"; };
+		5755242A25D5FDB900C795DC /* ListOfShowsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfShowsRouter.swift; sourceTree = "<group>"; };
+		5755242B25D5FDB900C795DC /* ListOfShowsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfShowsModels.swift; sourceTree = "<group>"; };
+		5755242C25D5FDB900C795DC /* ListOfShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfShowsViewController.swift; sourceTree = "<group>"; };
+		5755242D25D5FDB900C795DC /* ListOfShowsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfShowsInteractor.swift; sourceTree = "<group>"; };
+		5755243C25D6011400C795DC /* ShowCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCellTableViewCell.swift; sourceTree = "<group>"; };
+		5755244125D6030E00C795DC /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		5755244525D613F600C795DC /* ShowsGuideAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsGuideAPI.swift; sourceTree = "<group>"; };
+		5755244925D62B9C00C795DC /* ParseTVAmazeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseTVAmazeWorker.swift; sourceTree = "<group>"; };
+		5755244D25D62CA900C795DC /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		5755245125D63FAD00C795DC /* String_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extensions.swift; sourceTree = "<group>"; };
+		5755245625D646C500C795DC /* OzomeTVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzomeTVViewController.swift; sourceTree = "<group>"; };
+		5755245E25D64C7600C795DC /* OTVErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTVErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,14 +157,21 @@
 		575033F625D5C2A300E314C6 /* OzomeTV */ = {
 			isa = PBXGroup;
 			children = (
-				5755242625D5F56900C795DC /* Scenes */,
 				575033F725D5C2A300E314C6 /* AppDelegate.swift */,
-				575033F925D5C2A300E314C6 /* SceneDelegate.swift */,
-				575033FB25D5C2A300E314C6 /* ViewController.swift */,
+				5750340525D5C2A400E314C6 /* Info.plist */,
+				5750340225D5C2A400E314C6 /* LaunchScreen.storyboard */,
 				575033FD25D5C2A300E314C6 /* Main.storyboard */,
 				5750340025D5C2A400E314C6 /* OzomeTVAssets.xcassets */,
-				5750340225D5C2A400E314C6 /* LaunchScreen.storyboard */,
-				5750340525D5C2A400E314C6 /* Info.plist */,
+				5755244125D6030E00C795DC /* R.generated.swift */,
+				575033F925D5C2A300E314C6 /* SceneDelegate.swift */,
+				5755245B25D64BFE00C795DC /* Constants */,
+				5755245025D63F3600C795DC /* Extensions */,
+				5755244C25D62C5C00C795DC /* Models */,
+				5755242625D5F56900C795DC /* Scenes */,
+				5755244425D613C300C795DC /* Services */,
+				5755245425D6468500C795DC /* Subclases */,
+				5755243A25D600B300C795DC /* UIViews */,
+				5755244825D62B4400C795DC /* Workers */,
 			);
 			path = OzomeTV;
 			sourceTree = "<group>";
@@ -147,8 +197,88 @@
 		5755242625D5F56900C795DC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				5755242725D5FD6000C795DC /* ListOfShows */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5755242725D5FD6000C795DC /* ListOfShows */ = {
+			isa = PBXGroup;
+			children = (
+				5755242825D5FDB900C795DC /* ListOfShowsPresenter.swift */,
+				5755242925D5FDB900C795DC /* ListOfShowsWorker.swift */,
+				5755242A25D5FDB900C795DC /* ListOfShowsRouter.swift */,
+				5755242B25D5FDB900C795DC /* ListOfShowsModels.swift */,
+				5755242C25D5FDB900C795DC /* ListOfShowsViewController.swift */,
+				5755242D25D5FDB900C795DC /* ListOfShowsInteractor.swift */,
+			);
+			path = ListOfShows;
+			sourceTree = "<group>";
+		};
+		5755243A25D600B300C795DC /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				5755243B25D600CC00C795DC /* ShowTableViewCell */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		5755243B25D600CC00C795DC /* ShowTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5755243C25D6011400C795DC /* ShowCellTableViewCell.swift */,
+			);
+			path = ShowTableViewCell;
+			sourceTree = "<group>";
+		};
+		5755244425D613C300C795DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5755244525D613F600C795DC /* ShowsGuideAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5755244825D62B4400C795DC /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				5755244925D62B9C00C795DC /* ParseTVAmazeWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		5755244C25D62C5C00C795DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5755244D25D62CA900C795DC /* Show.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5755245025D63F3600C795DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5755245125D63FAD00C795DC /* String_Extensions.swift */,
+				57125E2025D6FB1E0082532D /* Date_Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5755245425D6468500C795DC /* Subclases */ = {
+			isa = PBXGroup;
+			children = (
+				5755245625D646C500C795DC /* OzomeTVViewController.swift */,
+			);
+			path = Subclases;
+			sourceTree = "<group>";
+		};
+		5755245B25D64BFE00C795DC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5755245E25D64C7600C795DC /* OTVErrors.swift */,
+				57125E2325D702490082532D /* Styles.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		9DAFCA6B8DF52C67055461A1 /* Pods */ = {
@@ -168,6 +298,7 @@
 			buildConfigurationList = 5750341E25D5C2A400E314C6 /* Build configuration list for PBXNativeTarget "OzomeTV" */;
 			buildPhases = (
 				CA71E7BCA8CF59B4FC66DA13 /* [CP] Check Pods Manifest.lock */,
+				5755243F25D601FE00C795DC /* R.swift */,
 				575033F025D5C2A300E314C6 /* Sources */,
 				575033F125D5C2A300E314C6 /* Frameworks */,
 				575033F225D5C2A300E314C6 /* Resources */,
@@ -288,6 +419,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5755243F25D601FE00C795DC /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		BE890AA01AB2BFA1466832A1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,9 +485,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				575033FC25D5C2A300E314C6 /* ViewController.swift in Sources */,
+				5755245F25D64C7600C795DC /* OTVErrors.swift in Sources */,
+				57125E2125D6FB1E0082532D /* Date_Extensions.swift in Sources */,
+				5755245225D63FAD00C795DC /* String_Extensions.swift in Sources */,
+				5755243D25D6011400C795DC /* ShowCellTableViewCell.swift in Sources */,
+				5755243225D5FDB900C795DC /* ListOfShowsRouter.swift in Sources */,
+				5755245725D646C500C795DC /* OzomeTVViewController.swift in Sources */,
 				575033F825D5C2A300E314C6 /* AppDelegate.swift in Sources */,
+				5755242E25D5FDB900C795DC /* ListOfShowsPresenter.swift in Sources */,
+				5755243425D5FDB900C795DC /* ListOfShowsModels.swift in Sources */,
+				57125E2425D702490082532D /* Styles.swift in Sources */,
+				5755244625D613F600C795DC /* ShowsGuideAPI.swift in Sources */,
+				5755243025D5FDB900C795DC /* ListOfShowsWorker.swift in Sources */,
+				5755243625D5FDB900C795DC /* ListOfShowsViewController.swift in Sources */,
+				5755243825D5FDB900C795DC /* ListOfShowsInteractor.swift in Sources */,
+				5755244225D6030E00C795DC /* R.generated.swift in Sources */,
+				5755244E25D62CA900C795DC /* Show.swift in Sources */,
 				575033FA25D5C2A300E314C6 /* SceneDelegate.swift in Sources */,
+				5755244A25D62B9C00C795DC /* ParseTVAmazeWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +510,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5755243325D5FDB900C795DC /* ListOfShowsRouter.swift in Sources */,
+				5755242F25D5FDB900C795DC /* ListOfShowsPresenter.swift in Sources */,
+				5755244725D613F600C795DC /* ShowsGuideAPI.swift in Sources */,
+				5755244B25D62B9C00C795DC /* ParseTVAmazeWorker.swift in Sources */,
+				5755244325D6030E00C795DC /* R.generated.swift in Sources */,
+				5755245825D646C500C795DC /* OzomeTVViewController.swift in Sources */,
+				5755243E25D6011400C795DC /* ShowCellTableViewCell.swift in Sources */,
+				5755244F25D62CA900C795DC /* Show.swift in Sources */,
+				5755243925D5FDB900C795DC /* ListOfShowsInteractor.swift in Sources */,
+				5755245325D63FAD00C795DC /* String_Extensions.swift in Sources */,
+				5755243725D5FDB900C795DC /* ListOfShowsViewController.swift in Sources */,
+				5755243125D5FDB900C795DC /* ListOfShowsWorker.swift in Sources */,
+				5755243525D5FDB900C795DC /* ListOfShowsModels.swift in Sources */,
 				5750340F25D5C2A400E314C6 /* OzomeTVTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
