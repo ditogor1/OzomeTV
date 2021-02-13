@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  ListOfShows.swift
 //  OzomeTV
 //
 //  Created by VICTOR ALEJANDRO REZA RODRIGUEZ on 2/11/21.
@@ -7,14 +7,15 @@
 
 import UIKit
 
-enum ListOfShows
-{
+typealias VMDisplayedShow = ListOfShows.FetchShows.ViewModel.DisplayedShow
+
+enum ListOfShows {
     // MARK: Use cases
     
     enum FetchShows {
         
         struct Request {
-            
+            let date: Date
         }
         
         struct Response {
@@ -32,9 +33,24 @@ enum ListOfShows
                 let runtime: Int
                 let imageURL: URL?
                 let summary: String
+                let showId: Int
             }
             
             var displayedShows: [DisplayedShow]
+        }
+    }
+    
+    enum DisplayShowDetails {
+        struct Request {
+            var indexPath: IndexPath
+            var navigationController: UINavigationController?
+        }
+        
+        struct Response {
+            var show: Show
+        }
+        
+        struct ViewModel {
         }
     }
 }

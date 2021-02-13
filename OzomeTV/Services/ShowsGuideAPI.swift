@@ -13,8 +13,8 @@ enum ShowsGuideAPIError: Error {
 
 class ShowsGuideAPI: ShowsGuideProtocol {
     
-    func fetchShowsFromGuide(completionHandler: @escaping ([Show]?, Error?) -> Void) {
-        AF.request("http://api.tvmaze.com/schedule?country=US&date=2021-02-12").responseJSON { (response) in
+    func fetchShowsFromGuide(date: Date, completionHandler: @escaping ([Show]?, Error?) -> Void) {
+        AF.request("http://api.tvmaze.com/schedule?country=US&date=\(date.dashFormatedString)").responseJSON { (response) in
             
             switch response.result {
             case .success(let JSON):
@@ -37,6 +37,30 @@ class ShowsGuideAPI: ShowsGuideProtocol {
         }
     }
     
-    
+    func fetchShowDetailsFromGuide(show: Show, completionHandler: @escaping (ShowDetails?, Error?) -> Void) {
+        AF.request("http://api.tvmaze.com/shows/\(show.showId)").responseJSON { (response) in
+            
+            switch response.result {
+            case .success(let JSON):
+                
+                guard let validDictionary = JSON as? [String : Any] else {
+                    completionHandler(nil, ShowsGuideAPIError.extraneousObject)
+                    return
+                }
+                
+                guard let show: ShowDetails = ParseTVAmazeWorker.parseFetchShowFromGuide(validDictionary) else {
+                    completionHandler(nil, ShowsGuideAPIError.extraneousObject)
+                    return
+                }
+                
+                completionHandler(show, nil)
+
+            case .failure(let error):
+                completionHandler(nil, error)
+            }
+        }
+        
+        
+    }
 
 }

@@ -11,4 +11,10 @@ extension Date {
     func add(minutes: Int) -> Date {
         return (Calendar.current as NSCalendar).date(byAdding: .minute, value: minutes, to: self, options: [])!
     }
+    
+    var dashFormatedString: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter.string(from: self)
+    }
 }

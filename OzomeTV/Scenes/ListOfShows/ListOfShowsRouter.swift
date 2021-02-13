@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  ListOfShowsRouter.swift
 //  OzomeTV
 //
 //  Created by VICTOR ALEJANDRO REZA RODRIGUEZ on 2/11/21.
@@ -7,49 +7,37 @@
 
 import UIKit
 
-@objc protocol ListOfShowsRoutingLogic
-{
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
+protocol ListOfShowsRoutingLogic {
+    func routeToDisplayShowDetails(indexPath: IndexPath, navigationController: UINavigationController?)
 }
 
-//protocol ListOfShowsDataPassing
-//{
-//  var dataStore: ListOfShowsDataStore? { get }
-//}
+protocol ListOfShowsDataPassing {
+    var dataSource: ListOfShowsDataSource? { get }
+}
 
-class ListOfShowsRouter: NSObject, ListOfShowsRoutingLogic
-{
-  weak var viewController: ListOfShowsViewController?
-//  var dataStore: ListOfShowsDataStore?
+class ListOfShowsRouter: ListOfShowsDataPassing {
+    weak var viewController: ListOfShowsViewController?
+    var dataSource: ListOfShowsDataSource?
   
-  // MARK: Routing
   
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
-  //{
-  //  if let segue = segue {
-  //    let destinationVC = segue.destination as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //  } else {
-  //    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-  //    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //    navigateToSomewhere(source: viewController!, destination: destinationVC)
-  //  }
-  //}
+    // MARK: Passing Data
+    func passDataToShowDetails(indexPath: IndexPath, source: ListOfShowsDataSource, destination: inout ShowDetailsDataSource) {
+        destination.showDataSource = source.showsDataSource![indexPath.row]
+    }
+    
+    // MARK: Navigation
+    func navigateToShowOrder(navigationController: UINavigationController, destination: ShowDetailsViewController) {
+        navigationController.pushViewController(destination, animated: true)
+    }
+}
 
-  // MARK: Navigation
-  
-  //func navigateToSomewhere(source: ListOfShowsViewController, destination: SomewhereViewController)
-  //{
-  //  source.show(destination, sender: nil)
-  //}
-  
-  // MARK: Passing data
-  
-  //func passDataToSomewhere(source: ListOfShowsDataStore, destination: inout SomewhereDataStore)
-  //{
-  //  destination.name = source.name
-  //}
+extension ListOfShowsRouter: ListOfShowsRoutingLogic {
+    
+    func routeToDisplayShowDetails(indexPath: IndexPath, navigationController: UINavigationController?) {
+        let destinationVC: ShowDetailsViewController = R.storyboard.main.kShowDetailsViewController()!
+        destinationVC.router!.dataSource!.showDataSource = dataSource!.showsDataSource![indexPath.row]
+        navigateToShowOrder(navigationController: navigationController!, destination: destinationVC)
+    }
+    
+    
 }

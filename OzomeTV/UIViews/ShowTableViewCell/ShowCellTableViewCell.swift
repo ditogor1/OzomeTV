@@ -20,7 +20,7 @@ class ShowCellTableViewCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    func filloutCell(with displayedShow: ListOfShows.FetchShows.ViewModel.DisplayedShow) {
+    func filloutCell(with displayedShow: VMDisplayedShow) {
         titleLabel.text = displayedShow.name
         descriptionLabel.attributedText = displayedShow.summary.htmlAttributedString(detailsAttributes)
         timeLabel.text = displayedShow.airtime

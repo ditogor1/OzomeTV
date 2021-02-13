@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  ListOfShowsViewController.swift
 //  OzomeTV
 //
 //  Created by VICTOR ALEJANDRO REZA RODRIGUEZ on 2/11/21.
@@ -18,9 +18,8 @@ protocol DisplayLogicError {
 
 class ListOfShowsViewController: OzomeTVViewController {
     var interactor: ListOfShowsBusinessLogic?
-//    var router: (NSObjectProtocol & ListOfShowsRoutingLogic & ListOfShowsDataPassing)?
-    var displayedShows: [ListOfShows.FetchShows.ViewModel.DisplayedShow] = []
-    
+    var router: ListOfShowsRoutingLogic?
+    var displayedShows: [VMDisplayedShow] = []
     
     @IBOutlet weak var table: UITableView!
     
@@ -45,21 +44,17 @@ class ListOfShowsViewController: OzomeTVViewController {
         let presenter = ListOfShowsPresenter()
         let router = ListOfShowsRouter()
         viewController.interactor = interactor
-//        viewController.router = router
+        viewController.router = router
         interactor.presenter = presenter
         presenter.viewController = viewController
         router.viewController = viewController
+        router.dataSource = interactor
     }
     
     // MARK: Routing
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let scene = segue.identifier {
-            let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-//            if let router = router, router.responds(to: selector) {
-//                router.perform(selector, with: segue)
-//            }
-        }
+    func selectedIndexPath(_ indexPath: IndexPath) {
+        router?.routeToDisplayShowDetails(indexPath: indexPath, navigationController: self.navigationController)
     }
     
     // MARK: View lifecycle
@@ -76,11 +71,10 @@ class ListOfShowsViewController: OzomeTVViewController {
         fetchShows()
     }
     
-    
     // MARK: Follow Rules
     
     func fetchShows() {
-        let request = ListOfShows.FetchShows.Request()
+        let request = ListOfShows.FetchShows.Request(date: Date())
         interactor?.fetchShowsRule(request: request)
     }
 }
@@ -111,12 +105,10 @@ extension ListOfShowsViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
 }
 
 extension ListOfShowsViewController: UITableViewDelegate {
-    
-    
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndexPath(indexPath)
+    }
 }

@@ -9,7 +9,18 @@
 /* Begin PBXBuildFile section */
 		4295B976CC984CCB6BED692A /* libPods-OzomeTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9EF96B3CCC962437A33898 /* libPods-OzomeTV.a */; };
 		57125E2125D6FB1E0082532D /* Date_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2025D6FB1E0082532D /* Date_Extensions.swift */; };
-		57125E2425D702490082532D /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2325D702490082532D /* Styles.swift */; };
+		57125E2B25D71FBA0082532D /* ShowDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2525D71FB90082532D /* ShowDetailsPresenter.swift */; };
+		57125E2C25D71FBA0082532D /* ShowDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2525D71FB90082532D /* ShowDetailsPresenter.swift */; };
+		57125E2D25D71FBA0082532D /* ShowDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2625D71FB90082532D /* ShowDetailsWorker.swift */; };
+		57125E2E25D71FBA0082532D /* ShowDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2625D71FB90082532D /* ShowDetailsWorker.swift */; };
+		57125E2F25D71FBA0082532D /* ShowDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2725D71FB90082532D /* ShowDetailsRouter.swift */; };
+		57125E3025D71FBA0082532D /* ShowDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2725D71FB90082532D /* ShowDetailsRouter.swift */; };
+		57125E3125D71FBA0082532D /* ShowDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2825D71FBA0082532D /* ShowDetailsModels.swift */; };
+		57125E3225D71FBA0082532D /* ShowDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2825D71FBA0082532D /* ShowDetailsModels.swift */; };
+		57125E3325D71FBA0082532D /* ShowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2925D71FBA0082532D /* ShowDetailsViewController.swift */; };
+		57125E3425D71FBA0082532D /* ShowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2925D71FBA0082532D /* ShowDetailsViewController.swift */; };
+		57125E3525D71FBA0082532D /* ShowDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2A25D71FBA0082532D /* ShowDetailsInteractor.swift */; };
+		57125E3625D71FBA0082532D /* ShowDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57125E2A25D71FBA0082532D /* ShowDetailsInteractor.swift */; };
 		575033F825D5C2A300E314C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575033F725D5C2A300E314C6 /* AppDelegate.swift */; };
 		575033FA25D5C2A300E314C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575033F925D5C2A300E314C6 /* SceneDelegate.swift */; };
 		575033FF25D5C2A300E314C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575033FD25D5C2A300E314C6 /* Main.storyboard */; };
@@ -44,6 +55,8 @@
 		5755245725D646C500C795DC /* OzomeTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755245625D646C500C795DC /* OzomeTVViewController.swift */; };
 		5755245825D646C500C795DC /* OzomeTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755245625D646C500C795DC /* OzomeTVViewController.swift */; };
 		5755245F25D64C7600C795DC /* OTVErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755245E25D64C7600C795DC /* OTVErrors.swift */; };
+		57EE8ABC25D778C3001792D4 /* ShowDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EE8ABB25D778C3001792D4 /* ShowDetails.swift */; };
+		57EE8ABD25D778C3001792D4 /* ShowDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EE8ABB25D778C3001792D4 /* ShowDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +81,12 @@
 		2B9EF96B3CCC962437A33898 /* libPods-OzomeTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OzomeTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9B14FE2D153A0F55022D08 /* Pods-OzomeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzomeTV.release.xcconfig"; path = "Target Support Files/Pods-OzomeTV/Pods-OzomeTV.release.xcconfig"; sourceTree = "<group>"; };
 		57125E2025D6FB1E0082532D /* Date_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date_Extensions.swift; sourceTree = "<group>"; };
-		57125E2325D702490082532D /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		57125E2525D71FB90082532D /* ShowDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsPresenter.swift; sourceTree = "<group>"; };
+		57125E2625D71FB90082532D /* ShowDetailsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsWorker.swift; sourceTree = "<group>"; };
+		57125E2725D71FB90082532D /* ShowDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsRouter.swift; sourceTree = "<group>"; };
+		57125E2825D71FBA0082532D /* ShowDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsModels.swift; sourceTree = "<group>"; };
+		57125E2925D71FBA0082532D /* ShowDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsViewController.swift; sourceTree = "<group>"; };
+		57125E2A25D71FBA0082532D /* ShowDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsInteractor.swift; sourceTree = "<group>"; };
 		575033F425D5C2A300E314C6 /* OzomeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OzomeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		575033F725D5C2A300E314C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		575033F925D5C2A300E314C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +114,7 @@
 		5755245125D63FAD00C795DC /* String_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Extensions.swift; sourceTree = "<group>"; };
 		5755245625D646C500C795DC /* OzomeTVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzomeTVViewController.swift; sourceTree = "<group>"; };
 		5755245E25D64C7600C795DC /* OTVErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTVErrors.swift; sourceTree = "<group>"; };
+		57EE8ABB25D778C3001792D4 /* ShowDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +149,19 @@
 				2B9EF96B3CCC962437A33898 /* libPods-OzomeTV.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57125E3725D71FC70082532D /* ShowDetails */ = {
+			isa = PBXGroup;
+			children = (
+				57125E2525D71FB90082532D /* ShowDetailsPresenter.swift */,
+				57125E2625D71FB90082532D /* ShowDetailsWorker.swift */,
+				57125E2725D71FB90082532D /* ShowDetailsRouter.swift */,
+				57125E2825D71FBA0082532D /* ShowDetailsModels.swift */,
+				57125E2925D71FBA0082532D /* ShowDetailsViewController.swift */,
+				57125E2A25D71FBA0082532D /* ShowDetailsInteractor.swift */,
+			);
+			path = ShowDetails;
 			sourceTree = "<group>";
 		};
 		575033EB25D5C2A300E314C6 = {
@@ -198,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				5755242725D5FD6000C795DC /* ListOfShows */,
+				57125E3725D71FC70082532D /* ShowDetails */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -251,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				5755244D25D62CA900C795DC /* Show.swift */,
+				57EE8ABB25D778C3001792D4 /* ShowDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -276,7 +310,6 @@
 			isa = PBXGroup;
 			children = (
 				5755245E25D64C7600C795DC /* OTVErrors.swift */,
-				57125E2325D702490082532D /* Styles.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -487,18 +520,24 @@
 			files = (
 				5755245F25D64C7600C795DC /* OTVErrors.swift in Sources */,
 				57125E2125D6FB1E0082532D /* Date_Extensions.swift in Sources */,
+				57125E2F25D71FBA0082532D /* ShowDetailsRouter.swift in Sources */,
 				5755245225D63FAD00C795DC /* String_Extensions.swift in Sources */,
+				57125E3325D71FBA0082532D /* ShowDetailsViewController.swift in Sources */,
 				5755243D25D6011400C795DC /* ShowCellTableViewCell.swift in Sources */,
+				57125E3125D71FBA0082532D /* ShowDetailsModels.swift in Sources */,
+				57125E2B25D71FBA0082532D /* ShowDetailsPresenter.swift in Sources */,
 				5755243225D5FDB900C795DC /* ListOfShowsRouter.swift in Sources */,
 				5755245725D646C500C795DC /* OzomeTVViewController.swift in Sources */,
 				575033F825D5C2A300E314C6 /* AppDelegate.swift in Sources */,
 				5755242E25D5FDB900C795DC /* ListOfShowsPresenter.swift in Sources */,
 				5755243425D5FDB900C795DC /* ListOfShowsModels.swift in Sources */,
-				57125E2425D702490082532D /* Styles.swift in Sources */,
 				5755244625D613F600C795DC /* ShowsGuideAPI.swift in Sources */,
+				57125E2D25D71FBA0082532D /* ShowDetailsWorker.swift in Sources */,
 				5755243025D5FDB900C795DC /* ListOfShowsWorker.swift in Sources */,
 				5755243625D5FDB900C795DC /* ListOfShowsViewController.swift in Sources */,
+				57125E3525D71FBA0082532D /* ShowDetailsInteractor.swift in Sources */,
 				5755243825D5FDB900C795DC /* ListOfShowsInteractor.swift in Sources */,
+				57EE8ABC25D778C3001792D4 /* ShowDetails.swift in Sources */,
 				5755244225D6030E00C795DC /* R.generated.swift in Sources */,
 				5755244E25D62CA900C795DC /* Show.swift in Sources */,
 				575033FA25D5C2A300E314C6 /* SceneDelegate.swift in Sources */,
@@ -513,14 +552,21 @@
 				5755243325D5FDB900C795DC /* ListOfShowsRouter.swift in Sources */,
 				5755242F25D5FDB900C795DC /* ListOfShowsPresenter.swift in Sources */,
 				5755244725D613F600C795DC /* ShowsGuideAPI.swift in Sources */,
+				57125E2E25D71FBA0082532D /* ShowDetailsWorker.swift in Sources */,
+				57125E3425D71FBA0082532D /* ShowDetailsViewController.swift in Sources */,
 				5755244B25D62B9C00C795DC /* ParseTVAmazeWorker.swift in Sources */,
+				57125E3225D71FBA0082532D /* ShowDetailsModels.swift in Sources */,
+				57EE8ABD25D778C3001792D4 /* ShowDetails.swift in Sources */,
 				5755244325D6030E00C795DC /* R.generated.swift in Sources */,
 				5755245825D646C500C795DC /* OzomeTVViewController.swift in Sources */,
 				5755243E25D6011400C795DC /* ShowCellTableViewCell.swift in Sources */,
+				57125E2C25D71FBA0082532D /* ShowDetailsPresenter.swift in Sources */,
 				5755244F25D62CA900C795DC /* Show.swift in Sources */,
 				5755243925D5FDB900C795DC /* ListOfShowsInteractor.swift in Sources */,
 				5755245325D63FAD00C795DC /* String_Extensions.swift in Sources */,
 				5755243725D5FDB900C795DC /* ListOfShowsViewController.swift in Sources */,
+				57125E3025D71FBA0082532D /* ShowDetailsRouter.swift in Sources */,
+				57125E3625D71FBA0082532D /* ShowDetailsInteractor.swift in Sources */,
 				5755243125D5FDB900C795DC /* ListOfShowsWorker.swift in Sources */,
 				5755243525D5FDB900C795DC /* ListOfShowsModels.swift in Sources */,
 				5750340F25D5C2A400E314C6 /* OzomeTVTests.swift in Sources */,

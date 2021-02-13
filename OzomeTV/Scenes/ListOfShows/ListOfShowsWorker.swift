@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  ListOfShowsWorker.swift
 //  OzomeTV
 //
 //  Created by VICTOR ALEJANDRO REZA RODRIGUEZ on 2/11/21.
@@ -7,6 +7,11 @@
 
 import Foundation
 
+
+protocol ShowsGuideProtocol {
+    func fetchShowsFromGuide(date: Date, completionHandler: @escaping ([Show]?, Error?) -> Void)
+    func fetchShowDetailsFromGuide(show: Show, completionHandler: @escaping (ShowDetails?, Error?) -> Void)
+}
 
 class ListOfShowsWorker {
     
@@ -16,17 +21,12 @@ class ListOfShowsWorker {
         self.showsGuide = showsGuide
     }
     
-    func fetchShowsWork(completionHandler: @escaping ([Show]?, Error?) -> Void) {
-        
-        showsGuide.fetchShowsFromGuide { (shows, error) in
+    func fetchShowsWork(date: Date, completionHandler: @escaping ([Show]?, Error?) -> Void) {
+        showsGuide.fetchShowsFromGuide(date: date, completionHandler: { (shows, error) in
             completionHandler(shows, error)
-        }
-        
+        })
     }
 }
 
 
-protocol ShowsGuideProtocol {
-    
-    func fetchShowsFromGuide(completionHandler: @escaping ([Show]?, Error?) -> Void)
-}
+

@@ -17,4 +17,5 @@ struct Show {
     let runtime: Int
     let imageURL: URL?
     let summary: String
+    let showId: Int
 }
