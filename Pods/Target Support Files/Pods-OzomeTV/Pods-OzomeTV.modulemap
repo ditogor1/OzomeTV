@@ -1,0 +1,6 @@
+module Pods_OzomeTV {
+  umbrella header "Pods-OzomeTV-umbrella.h"
+
+  export *
+  module * { export * }
+}
