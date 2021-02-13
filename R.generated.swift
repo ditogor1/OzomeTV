@@ -170,6 +170,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `kShowCellTableViewCell`.
+    static let kShowCellTableViewCell: Rswift.ReuseIdentifier<ShowCellTableViewCell> = Rswift.ReuseIdentifier(identifier: "kShowCellTableViewCell")
+
+    fileprivate init() {}
+  }
+
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()
@@ -219,14 +227,21 @@ struct _R: Rswift.Validatable {
 
     #if os(iOS) || os(tvOS)
     struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = ListOfShowsViewController
+      typealias InitialController = UIKit.UINavigationController
 
       let bundle = R.hostingBundle
+      let kShowDetailsViewController = StoryboardViewControllerResource<ShowDetailsViewController>(identifier: "kShowDetailsViewController")
       let name = "Main"
 
+      func kShowDetailsViewController(_: Void = ()) -> ShowDetailsViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: kShowDetailsViewController)
+      }
+
       static func validate() throws {
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "arrow.down.doc") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'arrow.down.doc' is used in storyboard 'Main', but couldn't be loaded.") } }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
+        if _R.storyboard.main().kShowDetailsViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'kShowDetailsViewController' could not be loaded from storyboard 'Main' as 'ShowDetailsViewController'.") }
       }
 
       fileprivate init() {}

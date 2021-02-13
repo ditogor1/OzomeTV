@@ -10,6 +10,7 @@ import UIKit
 protocol ListOfShowsPresentationLogic: class {
     func presentShows(response: ListOfShows.FetchShows.Response)
     func presentError(_ error: Error)
+    func presentSpiningLoader(_ display: Bool)
 }
 
 class ListOfShowsPresenter: NSObject {
@@ -43,10 +44,15 @@ extension ListOfShowsPresenter: ListOfShowsPresentationLogic {
     func presentShows(response: ListOfShows.FetchShows.Response) {
         let viewModel = mapToViewModel(response: response)
         viewController?.displayFetchedShows(viewModel: viewModel)
+        viewController?.displayEmptyShows(viewModel.displayedShows.count > 0)
     }
     
     func presentError(_ error: Error) {
         viewController?.displayErrorAlert(error)
+    }
+    
+    func presentSpiningLoader(_ display: Bool) {
+        viewController?.displaySpinnerLoader(display)
     }
 }
 

@@ -26,7 +26,11 @@ class ListOfShowsInteractor: NSObject {
 extension ListOfShowsInteractor: ListOfShowsBusinessLogic {
     
     func fetchShowsRule(request: ListOfShows.FetchShows.Request) {
+        presenter?.presentSpiningLoader(true)
+        
         listOfShowsWorker.fetchShowsWork(date: request.date) { (shows, error) in
+            self.presenter?.presentSpiningLoader(false)
+            
             guard error == nil else {
                 self.presenter?.presentError(error!)
                 return
@@ -37,26 +41,40 @@ extension ListOfShowsInteractor: ListOfShowsBusinessLogic {
                 return
             }
             
-            self.shows = self.getCurrentAiringShows(validShows)
+            self.shows = self.getCurrentAiringShows(validShows, currentTime: request.date, atHour: request.atHour)
             let response = ListOfShows.FetchShows.Response(shows: self.shows!)
             self.presenter?.presentShows(response: response)
         }
     }
     
-    private func getCurrentAiringShows(_ rawShows: [Show]) -> [Show]{
-        let currentTime = Date()//"2021-02-12T20:15:00+00:00".toDate!
+    private func getCurrentAiringShows(_ rawShows: [Show], currentTime: Date, atHour: Int) -> [Show]{
+        let extraTime = (atHour < 0 || atHour > 24) ? 0 : (atHour * 60)
+        let actualTime = currentTime.add(minutes: extraTime)
         
+        var showsToDisplay: [Show]
         let filteredShows = rawShows.filter { (showItem) -> Bool in
-            return (currentTime >= showItem.airTimestamp) && (currentTime <= showItem.airTimestamp.add(minutes: showItem.runtime))
+            return (actualTime >= showItem.airTimestamp) && (actualTime <= showItem.airTimestamp.add(minutes: showItem.runtime))
         }
         
-        let sortedByDate = filteredShows.sorted { (displayedShowItemOne, displayedShowItemTwo) -> Bool in
+        showsToDisplay = filteredShows.count > 0 ? filteredShows : nextFewShows(rawShows)
+        
+        let sortedByDate = showsToDisplay.sorted { (displayedShowItemOne, displayedShowItemTwo) -> Bool in
             displayedShowItemOne.airTimestamp < displayedShowItemTwo.airTimestamp
         }
         
         return sortedByDate
     }
     
+    private func nextFewShows(_ rawShows: [Show]) -> [Show] {
+        let maxumber = 5
+        let currentTime = Date()
+        
+        let filteredShows = rawShows.filter { (showItem) -> Bool in
+            return currentTime >= showItem.airTimestamp
+        }
+        
+        return Array(filteredShows.prefix(maxumber))
+    }
 }
 
 extension ListOfShowsInteractor: ListOfShowsDataSource {

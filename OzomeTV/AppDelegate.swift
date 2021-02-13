@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import APESuperHUD
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        prepareAPESuperHUD()
         return true
     }
 
@@ -31,6 +32,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    func prepareAPESuperHUD() {
+        HUDAppearance.messageFont = UIFont.systemFont(ofSize: 12.0)
+        HUDAppearance.titleFont = UIFont.systemFont(ofSize: 16.0)
+        HUDAppearance.iconSize = CGSize(width: 0, height: 0)
+        HUDAppearance.cancelableOnTouch = false
+    }
 
 }
 

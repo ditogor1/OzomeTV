@@ -16,6 +16,7 @@ enum ListOfShows {
         
         struct Request {
             let date: Date
+            let atHour: Int
         }
         
         struct Response {

@@ -14,7 +14,9 @@ enum ShowsGuideAPIError: Error {
 class ShowsGuideAPI: ShowsGuideProtocol {
     
     func fetchShowsFromGuide(date: Date, completionHandler: @escaping ([Show]?, Error?) -> Void) {
-        AF.request("http://api.tvmaze.com/schedule?country=US&date=\(date.dashFormatedString)").responseJSON { (response) in
+        let url = "http://api.tvmaze.com/schedule?country=US&date=\(date.add(minutes: -60).dashFormatedString)"
+        print("url: \(url)")
+        AF.request(url).responseJSON { (response) in
             
             switch response.result {
             case .success(let JSON):
@@ -38,7 +40,9 @@ class ShowsGuideAPI: ShowsGuideProtocol {
     }
     
     func fetchShowDetailsFromGuide(show: Show, completionHandler: @escaping (ShowDetails?, Error?) -> Void) {
-        AF.request("http://api.tvmaze.com/shows/\(show.showId)").responseJSON { (response) in
+        let url = "http://api.tvmaze.com/shows/\(show.showId)"
+        print("url: \(url)")
+        AF.request(url).responseJSON { (response) in
             
             switch response.result {
             case .success(let JSON):

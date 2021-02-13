@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Ongoing Shows-->
+        <!--Navigation Controller-->
         <scene sceneID="5LL-Et-KK1">
             <objects>
-                <navigationController title="Ongoing Shows" id="ePP-a6-2XV" sceneMemberID="viewController">
+                <navigationController id="ePP-a6-2XV" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b9W-2D-k51">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -41,9 +41,23 @@
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="j0B-Rn-3qA">
-                                    <rect key="frame" x="0.0" y="117.5" width="414" height="2"/>
+                                    <rect key="frame" x="0.0" y="117.5" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We didnt find any shows..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJs-rk-DsL">
+                                            <rect key="frame" x="107.5" y="59" width="199" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="HJs-rk-DsL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="j0B-Rn-3qA" secondAttribute="leading" id="Oed-dU-rVg"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HJs-rk-DsL" secondAttribute="trailing" id="eka-M1-UMW"/>
+                                        <constraint firstAttribute="bottom" secondItem="HJs-rk-DsL" secondAttribute="bottom" constant="20" id="hWx-N4-avN"/>
+                                        <constraint firstItem="HJs-rk-DsL" firstAttribute="centerX" secondItem="j0B-Rn-3qA" secondAttribute="centerX" id="nsm-Hp-fHJ"/>
+                                    </constraints>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="kShowCellTableViewCell" id="3Rj-Nf-thJ" customClass="ShowCellTableViewCell" customModule="OzomeTV" customModuleProvider="target">
@@ -127,9 +141,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LfY-ne-1JZ" secondAttribute="trailing" id="s7d-kB-UzG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="iJP-DY-NUv"/>
+                    <navigationItem key="navigationItem" title="Ongoing Shows" id="iJP-DY-NUv"/>
                     <connections>
                         <outlet property="table" destination="LfY-ne-1JZ" id="l5U-zV-VF4"/>
+                        <outlet property="tableFooterLabel" destination="HJs-rk-DsL" id="3l1-Mk-msl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

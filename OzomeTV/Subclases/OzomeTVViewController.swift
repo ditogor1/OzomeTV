@@ -6,13 +6,21 @@
 //
 
 import UIKit
+import APESuperHUD
 
 class OzomeTVViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    
+    func showLoading(_ message: String = "Please Wait...") {
+        APESuperHUD.show(style: .loadingIndicator(type: .standard), title: nil, message: message)
+    }
+    
+    func hideLoading() {
+        APESuperHUD.dismissAll(animated: true)
     }
     
     func showError(_ error: Error) {

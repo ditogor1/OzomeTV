@@ -10,6 +10,8 @@ import AlamofireImage
 
 protocol ListOfShowsDisplayLogic: class {
     func displayFetchedShows(viewModel: ListOfShows.FetchShows.ViewModel)
+    func displayEmptyShows(_ emptyShows: Bool)
+    func displaySpinnerLoader(_ display: Bool)
 }
 
 protocol DisplayLogicError {
@@ -22,8 +24,11 @@ class ListOfShowsViewController: OzomeTVViewController {
     var displayedShows: [VMDisplayedShow] = []
     
     @IBOutlet weak var table: UITableView!
-    
-    
+    @IBOutlet weak var tableFooterLabel: UILabel!
+    var refreshControl: UIRefreshControl?
+    var extraHour = 0
+    var timer: Timer?
+        
     // MARK: Object lifecycle
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -64,6 +69,9 @@ class ListOfShowsViewController: OzomeTVViewController {
         
         table.dataSource = self
         table.delegate = self
+        
+        setupRefreshControl()
+        setupBarButtons()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,24 +79,84 @@ class ListOfShowsViewController: OzomeTVViewController {
         fetchShows()
     }
     
+    // MARK: Private Methods
+    
+    private func setupRefreshControl() {
+        let tempRefreshControl = UIRefreshControl()
+        tempRefreshControl.tintColor = UIColor.black
+        tempRefreshControl.addTarget(self, action: #selector(refreshShows), for: .valueChanged)
+        refreshControl = tempRefreshControl
+        table.addSubview(refreshControl!)
+    }
+    
+    private func setupBarButtons() {
+        let nextButton = UIBarButtonItem(title: "Next Hour", style: .plain, target: self, action: #selector(addHour))
+        navigationItem.rightBarButtonItem = nextButton
+    }
+    
     // MARK: Follow Rules
     
-    func fetchShows() {
-        let request = ListOfShows.FetchShows.Request(date: Date())
+    @objc func addHour() {
+        if extraHour < 6 {
+            extraHour += 1
+            
+            fireTimer()
+            updateDisplayableHour(extraHour)
+        }
+    }
+    
+    private func fireTimer() {
+        if let validTimer = timer {
+            validTimer.invalidate()
+        }
+        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(fetchShows), userInfo: nil, repeats: false)
+    }
+    
+    @objc func fetchShows() {
+        
+        let request = ListOfShows.FetchShows.Request(date: Date().add(minutes: 2 * (60 * 24)), atHour: extraHour)
         interactor?.fetchShowsRule(request: request)
+    }
+    
+    @objc func refreshShows() {
+        extraHour = 0
+        self.navigationItem.title = "Ongoing Shows"
+        fetchShows()
+    }
+    
+    func updateDisplayableHour(_ hour: Int) {
+        DispatchQueue.main.async {
+            let newHour = Date().add(minutes: (60 * hour)).hour
+            self.navigationItem.title = "Schedule at: \(newHour)"
+        }
     }
 }
 
 extension ListOfShowsViewController: ListOfShowsDisplayLogic {
+
     func displayFetchedShows(viewModel: ListOfShows.FetchShows.ViewModel) {
         displayedShows = viewModel.displayedShows
-        table.separatorStyle = displayedShows.count == 0 ? .none : .singleLine
+        refreshControl?.endRefreshing()
         table.reloadData()
+    }
+    
+    func displayEmptyShows(_ emptyShows: Bool) {
+        tableFooterLabel.isHidden = emptyShows
+    }
+    
+    func displaySpinnerLoader(_ display: Bool) {
+        if display {
+            showLoading("Loading TV shows")
+        } else {
+            hideLoading()
+        }
     }
 }
 
 extension ListOfShowsViewController: DisplayLogicError {
     func displayErrorAlert(_ error: Error) {
+        refreshControl?.endRefreshing()
         showError(error)
     }
 }
